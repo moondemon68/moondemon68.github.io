@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+.section-black {
+    background-color: black;
+    color: white;
+}
+
+.section-white {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    color: #fff9;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar-item {
+
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
