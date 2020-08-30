@@ -1,30 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Plex);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+/* General begin */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: black;
-}
-
-.section-black {
-    background-color: black;
-    color: white;
-}
-
-.section-white {
-    background-color: white;
+    background-color: #0000;
     color: black;
-}
-
-.navbar {
-    color: #fff9;
-}
-
-.navbar-right {
-    float: right;
-}
-
-.navbar-item {
-
+    font-family: 'Plex', sans-serif;
+    margin: 0px;
 }
 
 a {
     color: inherit;
     text-decoration: inherit;
 }
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem 0rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* General end */
+
+/* Intro begin */
+.intro-container {
+    background-image: url("image/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 700px;
+    width: 100%;
+}
+
+.intro-text {
+    font-size: 5rem;
+    position: relative;
+    left: 5rem;
+    top: 500px;
+    color: white;
+    height: 8em;
+}
+/* Intro end */
+
+/* Sections begin */
+.section-grey {
+    background-color: #0004;
+    padding: 1rem 0px;
+}
+
+.section-white {
+    background-color: #fff;
+    padding: 1rem 0px;
+}
+/* Sections end */
+
+/* Navbar begin */
+.navbar {
+    display: inline;
+    position: absolute;
+    right: 5rem;
+}
+
+.navbar-item {
+    float: right;
+    padding: 1rem 0.5rem;
+    color: white;
+}
+/* Navbar end */
+
+/* Projects section begin */
+.projects-container {
+    margin: 10px 40px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.projects-item {
+    border: 5px solid darkgrey;
+    position: relative;
+    transition: 0.3s;
+    border-radius: 15px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.projects-item:hover {
+    border: 5px solid darkgrey;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);;
+    position: relative;
+    border-radius: 15px;
+    margin: 1rem 0;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.projects-title {
+    font-size: x-large;
+    margin-bottom: 0.5rem;
+}
+
+.projects-stack {
+    font-size: small;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.projects-description {
+    font-size: medium;
+}
+/* Projects section end */
+
+/* Achievements section begin */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0rem auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.achievement-container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+/* circles beside content */
+.achievement-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0%;
+}
+
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+  
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+  
+/* The actual content */
+.achievement-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.achievement-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-timespan {
+    color: #0009;
+    margin-bottom: 0.5rem;
+}
+/* Achievements section end */
+
+/* Contacts section begin */
+.contact-container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 1rem;
+}
+
+.contact-item {
+    position: relative;
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+i {
+    margin-right: 0.5rem;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #FF9F55;
+    width: 50%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2.5rem;
+    color: white;
+    background-color: #FF9F55;
+}
+
+.download-button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/* Contacts section end */

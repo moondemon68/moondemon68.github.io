@@ -10,64 +10,99 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/25734e3e8d.js" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
 
-    <section class="navbar">
-        <div class="navbar-right">
-            <a class="navbar-item" href="#education">Education</a>
-            <a class="navbar-item" href="#project">Projects</a>
-            <a class="navbar-item" href="#experience">Experience</a>
-            <a class="navbar-item" href="#achievement">Achievement</a>
-            <a class="navbar-item" href="#contact">Contact</a>
+    <!-- <section class="navbar">
+        <a class="navbar-item" href="#contact">Contact</a>
+        <a class="navbar-item" href="#achievements">Achievements</a>
+        <a class="navbar-item" href="#projects">Projects</a>
+    </section> -->
+
+    <section id="home" class="intro">
+        <div class="intro-container">
+            <div class="navbar">
+                <a class="navbar-item" href="#contact">Contact</a>
+                <a class="navbar-item" href="#achievements">Achievements</a>
+                <a class="navbar-item" href="#projects">Projects</a>
+            </div>
+            <h1 class="intro-text">Hello. I'm Morgen.</h1>
         </div>
     </section>
 
-    <section id="home" class="section-black">
-        <h1>Hello. I'm Morgen.</h1>
+    <section id="projects" class="section-white">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="projects-item" onclick="window.open('https://github.com/moondemon68/Flood-It-Solver', 'mywindow')">
+                <div class="projects-title">Flood-It Solver</div>
+                <div class="projects-stack">C++</div>
+                <div class="projects-description">A solver for the Flood-It! game using Greedy and A*.</div>
+            </div>
+            <div class="projects-item" onclick="window.open('https://github.com/moondemon68/CoroFind', 'mywindow')">
+                <div class="projects-title">CoroFind</div>
+                <div class="projects-stack">Python, Flask</div>
+                <div class="projects-description">News information extractor.</div>
+            </div>
+            <div class="projects-item" onclick="window.open('https://github.com/moondemon68/avatar-expander', 'mywindow')">
+                <div class="projects-title">Avatar Expander</div>
+                <div class="projects-stack">ReactJS</div>
+                <div class="projects-description">Simple graph visualizer.</div>
+            </div>
+        </div>
     </section>
 
-    <section id="education" class="section-white">
-        <p>Education</p>
-        <ul>
-            <li>Education Euy 1</li>
-            <li>Education Euy 2</li>
-            <li>Education Euy 3</li>
-        </ul>
-    </section>
-
-    <section id="project" class="section-black">
-        <p>Project</p>
-        <ul>
-            <li>Project Euy 1</li>
-            <li>Project Euy 2</li>
-            <li>Project Euy 3</li>
-        </ul>
-    </section>
-
-    <section id="experience" class="section-white">
-        <p>Experience</p>
-        <ul>
-            <li>Experience Euy 1</li>
-            <li>Experience Euy 2</li>
-            <li>Experience Euy 3</li>
-        </ul>
-    </section>
-
-    <section id="achievement" class="section-black">
-        <p>Achievement</p>
-        <ul>
-            <li>Achievement Euy 1</li>
-            <li>Achievement Euy 2</li>
-            <li>Achievement Euy 3</li>
-        </ul>
+    <section id="achievements" class="section-grey">
+        <h2>Achievements</h2>
+        <div class="timeline">
+            <div class="achievement-container left">
+                <div class="achievement-content">
+                    <div class="achievement-title">ACM ICPC Asia Jakarta Regionals 2018</div>
+                    <div class="achievement-timespan">33th Place</div>
+                    <div class="achievement-timespan">Oct 2018 - Nov 2018</div>
+                    <div class="achievement-description">International level programming competition held at Bina Nusantara University. Qualified after placing 25th from more than 600 participants in the qualification phase. </div>
+                </div>
+            </div>
+            <div class="achievement-container right">
+                <div class="achievement-content">
+                    <div class="achievement-title">IEEE Xtreme 13.0</div>
+                    <div class="achievement-timespan">45th Place</div>
+                    <div class="achievement-timespan">Oct 2019</div>
+                    <div class="achievement-description">24-hour marathon programming competition held by IEEE. More than 4000 teams from universities all over the worldparticipated in this competition.</div>
+                </div>
+            </div>
+            <div class="achievement-container left">
+                <div class="achievement-content">
+                    <div class="achievement-title">ACM ICPC Asia Jakarta Regionals 2019</div>
+                    <div class="achievement-timespan">29th Place</div>
+                    <div class="achievement-timespan">Oct 2019</div>
+                    <div class="achievement-description">International level programming competition held at Bina Nusantara University. Qualified after placing 32nd from more than 700 participants in the qualification phase. </div>
+                </div>
+            </div>
+            <div class="achievement-container right">
+                <div class="achievement-content">
+                    <div class="achievement-title">Codelympic OCBC NISP 2020</div>
+                    <div class="achievement-timespan">1st Place</div>
+                    <div class="achievement-timespan">Apr 2020 - May 2020</div>
+                    <div class="achievement-description">An annual online competitive programming competition competition organized by OCBC NISP to seek out the bestcoding enthusiast among Indonesian students.</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="section-white">
-        <p>Contact me</p>
-        <p><a href="mailto:moondemon68@gmail.com"><i class="far fa-envelope"></i>moondemon68@gmail.com</a></p>
-        <p><a href="https://github.com/moondemon68"><i class="fab fa-github"></i>moondemon68</a></p>
-        <p><a href="https://line.me/ti/p/~morgensudyanto"><i class="fab fa-line"></i>morgensudyanto</a></p>
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-item"><a href="mailto:moondemon68@gmail.com"><i class="far fa-envelope"></i>moondemon68@gmail.com</a></div>
+            <div class="contact-item"><a href="https://github.com/moondemon68"><i class="fab fa-github"></i>moondemon68</a></div>
+            <div class="contact-item"><a href="https://www.linkedin.com/in/morgensudyanto/"><i class="fab fa-linkedin"></i>morgensudyanto</a></div>
+            <div class="contact-item"><a href="https://line.me/ti/p/~morgensudyanto"><i class="fab fa-line"></i>morgensudyanto</a></div>
+            <div class="contact-item"><a href="https://www.facebook.com/moondemon68/"><i class="fab fa-facebook"></i>moondemon68</a></div>
+            <div class="contact-item"><a href="https://steamcommunity.com/id/moondemon68/"><i class="fab fa-steam"></i>moondemon68</a></div>
+            <button class="download-button">Download CV</button>
+        </div>
     </section>
 
 </body>
