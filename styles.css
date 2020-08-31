@@ -31,7 +31,7 @@ html {
 
 /* Intro begin */
 .intro-container {
-    background-image: url("image/background.jpg");
+    background-image: url("assets/image/background.jpg");
     background-size: cover;
     display: flex;
     flex-direction: row;
